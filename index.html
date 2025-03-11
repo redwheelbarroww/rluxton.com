@@ -19,12 +19,7 @@
             text-align: center;
         }
         .menu {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
+            margin-bottom: 20px;
         }
         .menu a {
             text-decoration: none;
@@ -32,29 +27,18 @@
             font-weight: 500;
             color: #007BFF;
             transition: 0.3s ease;
+            margin: 0 10px;
         }
         .menu a:hover {
             color: #0056b3;
         }
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .text-content {
-            flex: 1;
-            padding: 20px;
-        }
         .headshot {
             width: 180px;
             height: 180px;
-            object-position: top;
+            object-fit: cover; object-position: top;
             border-radius: 50%;
-            object-fit: cover;
             border: 4px solid #007BFF;
-            margin-right: 30px;
+            margin: 30px 0;
         }
         h1 {
             font-size: 2.5em;
@@ -65,6 +49,7 @@
             font-size: 0.85em;
             color: #666;
             margin-bottom: 20px;
+            max-width: 600px;
         }
         .cta {
             display: inline-block;
@@ -76,6 +61,7 @@
             border-radius: 6px;
             text-decoration: none;
             transition: 0.3s ease;
+            margin-top: 20px;
         }
         .cta:hover {
             background: #0056b3;
@@ -94,20 +80,6 @@
         .social-links a:hover {
             color: #0056b3;
         }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-            }
-            .headshot {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            .menu {
-                flex-direction: column;
-                top: 10px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -116,16 +88,12 @@
         <a href="#ai-workflows">Intermediate AI for Workflows</a>
         <a href="https://chatgpt.com/g/g-67c7e67f220c8191aa46332404ffa318-marketing-copywriting" target="_blank">Marketing Copywriter GPT</a>
     </div>
-    <div class="container">
-        <img src="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true" alt="Rebecca Luxton Headshot" class="headshot">
-        <div class="text-content">
-            <h1>Hello, you've reached Rebecca.</h1>
-            <p>I'm a full-stack marketing executive specializing in brand strategy, storytelling, and audience engagement – scaling brands, optimizing content marketing, and driving revenue growth.<br><br>Passionate about integrating AI to enhance efficiency – bridging emerging technology with strategic execution.<br><br>Dedicated to mentorship and shaping the future of AI-powered marketing.</p>
-            <a href="mailto:rebecca.m.luxton@gmail.com" class="cta">Contact Me</a>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/rebecca-luxton" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+    <img src="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true" alt="Rebecca Luxton Headshot" class="headshot">
+    <h1>Nice! You've reached Rebecca.</h1>
+    <p>I'm a full-stack marketing executive specializing in brand strategy, storytelling, and audience engagement – scaling brands, optimizing content marketing, and driving revenue growth.<br><br>Passionate about integrating AI to enhance efficiency – bridging emerging technology with strategic execution.<br><br>Dedicated to mentorship and shaping the future of AI-powered marketing.</p>
+    <a href="mailto:rebecca.m.luxton@gmail.com" class="cta">Contact Me</a>
+    <div class="social-links">
+        <a href="https://linkedin.com/in/rebecca-luxton" target="_blank">LinkedIn</a>
     </div>
 </body>
 </html>
