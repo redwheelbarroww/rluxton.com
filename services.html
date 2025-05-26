@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Rebecca Luxton</title>
+    <title>Services | Rebecca Luxton - Media Futurist</title>
     <style>
         body {
             font-family: 'Helvetica Neue', sans-serif;
@@ -12,35 +12,111 @@
             text-align: center;
             padding: 40px 20px;
         }
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            color: #0056b3;
+        }
         h1 {
             font-size: 2.4em;
             margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
         }
         p {
             font-size: 1em;
             color: #666;
             max-width: 650px;
             margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        .services-grid {
+            max-width: 800px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .service-card h3 {
+            color: #007BFF;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .service-card p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
         }
         a.cta {
             display: inline-block;
-            background: #007BFF;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
             color: white;
             font-size: 1.1em;
             font-weight: 500;
             text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 8px;
+            padding: 16px 32px;
+            border-radius: 12px;
             transition: 0.3s ease;
+            margin-top: 30px;
         }
         a.cta:hover {
+            transform: scale(1.05);
             background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>Advising & Custom GPTs</h1>
-    <p>Whether you're scaling a brand, building an AI assistant, or rethinking your team's workflow, I offer strategy, systems, and storytelling that drive results. Explore packages or book a custom engagement via YourCustomGPT.io.</p>
-    <a href="https://yourcustomgpt.io" class="cta" target="_blank">Visit YourCustomGPT.io</a>
+    <a href="index.html" class="back-link">← Back</a>
+    
+    <h1>Strategic Foresight & Future Planning</h1>
+    <p class="subtitle">Helping organizations navigate what's coming next</p>
+    
+    <p>I work with forward-thinking leaders to identify emerging patterns, build adaptive strategies, and position their teams ahead of technological and cultural shifts. Whether you're scaling a brand, implementing AI workflows, or preparing for industry disruption, I provide the strategic vision and practical frameworks to thrive in uncertainty.</p>
+    
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Trend Analysis & Pattern Recognition</h3>
+            <p>Strategic research into emerging technologies, cultural shifts, and market signals. Customized reports with actionable insights and timeline predictions for your industry.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>AI-Native Workflow Design</h3>
+            <p>Custom implementation strategies for integrating AI tools into your team's creative and operational processes. From workflow optimization to custom GPT development.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>Future-Ready Team Development</h3>
+            <p>Training and mentorship programs that prepare your team for rapidly evolving creative and marketing landscapes. Focus on adaptability and strategic thinking.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>Strategic Positioning Consultations</h3>
+            <p>One-on-one advisory sessions for leaders navigating technological disruption. Develop positioning strategies that anticipate market changes rather than react to them.</p>
+        </div>
+    </div>
+    
+    <a href="https://yourcustomgpt.io" class="cta" target="_blank">Explore Collaboration Opportunities</a>
 </body>
 </html>
