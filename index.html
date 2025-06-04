@@ -1,152 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:title" content="Rebecca Luxton | Media Futurist & VP of Marketing">
-    <meta property="og:description" content="Media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight.">
-    <meta property="og:image" content="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true">
-    <meta property="og:url" content="https://rluxton.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="description" content="Rebecca Luxton is a media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight.">
-    <meta name="keywords" content="Media Futurist, AI Marketing, Strategic Foresight, Pattern Recognition, Future of Marketing, Technology Trends, Rebecca Luxton">
-    <meta name="author" content="Rebecca Luxton">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebecca Luxton | Media Futurist & VP of Marketing</title>
+    
+    <!-- SEO + Social -->
+    <meta property="og:title" content="Rebecca Luxton | Media Futurist & VP of Marketing" />
+    <meta property="og:description" content="Media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
+    <meta property="og:image" content="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true" />
+    <meta property="og:url" content="https://rluxton.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="description" content="Rebecca Luxton is a media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
+    <meta name="keywords" content="Media Futurist, AI Marketing, Strategic Foresight, Pattern Recognition, Future of Marketing, Technology Trends, Rebecca Luxton" />
+    <meta name="author" content="Rebecca Luxton" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
-            min-height: 100vh;
+            font-family: 'EB Garamond', Georgia, serif;
+            background: #fcfcfc;
+            color: #2e2e2e;
             margin: 0;
-            background: #f0f0f0;
-            color: #333;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        @media (max-width: 768px) {
-            body {
-                padding-top: 120px;
-            }
-        }
+
         .menu {
-            margin-top: 10px;
             margin-bottom: 20px;
         }
+
         .menu a {
             text-decoration: none;
             font-size: 1.1em;
             font-weight: 500;
-            color: #007BFF;
-            transition: 0.3s ease;
-            margin: 0 10px;
+            color: #2a4d8f;
+            margin: 0 12px;
+            transition: 0.3s;
         }
+
         .menu a:hover {
-            color: #0056b3;
+            color: #1f3a6b;
         }
+
         .headshot {
-            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
             width: 180px;
             height: 180px;
             object-fit: cover;
             object-position: top;
             border-radius: 50%;
-            border: 4px solid #007BFF;
+            border: 4px solid #2a4d8f;
+            box-shadow: 0px 0px 8px rgba(42, 77, 143, 0.2);
             margin: 30px 0;
         }
+
         h1 {
-            font-size: 2.5em;
-            font-weight: 700;
+            font-size: 2.4em;
+            font-weight: 600;
+            letter-spacing: -0.3px;
             margin-bottom: 10px;
+            color: #1f3a6b;
         }
+
         p {
-            font-size: 1em;
-            padding: 0 15px;
-            color: #666;
+            font-size: 1.05em;
+            line-height: 1.7;
+            max-width: 680px;
+            color: #3a3a3a;
             margin-bottom: 20px;
-            max-width: 600px;
         }
+
         .cta {
-            background: linear-gradient(135deg, #007BFF, #0056b3);
+            background: linear-gradient(135deg, #2a4d8f, #1f3a6b);
             border-radius: 12px;
-            padding: 16px 32px;
+            padding: 14px 28px;
             font-size: 1.1em;
             font-weight: 500;
             color: white;
             text-decoration: none;
-            transition: 0.3s ease;
             margin-top: 20px;
             display: inline-block;
+            transition: 0.3s;
         }
+
         .cta:hover {
-            transform: scale(1.07);
-            background: #0056b3;
+            background: #1f3a6b;
+            transform: scale(1.05);
         }
+
         .social-links {
             margin-top: 15px;
         }
+
         .social-links a {
+            font-size: 1.1em;
             margin: 0 12px;
+            color: #2a4d8f;
             text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 500;
-            color: #007BFF;
-            transition: 0.3s ease;
         }
+
         .social-links a:hover {
-            color: #0056b3;
+            color: #1f3a6b;
         }
-        .focused-section {
-            margin-top: 70px;
-            max-width: 700px;
+
+        .focused-section,
+        .book-section {
+            margin-top: 60px;
+            max-width: 720px;
             padding: 0 20px;
             text-align: left;
         }
-        .focused-section h2 {
+
+        .focused-section h2,
+        .book-section h2 {
             font-size: 1.6em;
-            color: #007BFF;
-            margin-bottom: 20px;
+            color: #2a4d8f;
+            margin-bottom: 15px;
         }
+
         .focused-section ul {
             list-style-type: disc;
             padding-left: 20px;
-            color: #555;
-            font-size: 0.95em;
-        }
-        .book-section {
-            margin-top: 60px;
-            max-width: 700px;
-            padding: 0 20px;
-            text-align: left;
-        }
-        .book-section h2 {
-            font-size: 1.6em;
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-        .book-section p {
+            color: #444;
             font-size: 1em;
-            color: #555;
-            margin-bottom: 15px;
         }
+
+        .book-section p {
+            font-size: 1.05em;
+            color: #444;
+            line-height: 1.7;
+        }
+
         .banner {
             margin-top: 60px;
-            max-width: 700px;
-            width: 100%;
+            max-width: 720px;
             border-radius: 12px;
             overflow: hidden;
         }
+
         .banner img {
             width: 100%;
             height: auto;
             border-radius: 12px;
         }
+
         .caption {
             font-size: 0.95em;
-            color: #555;
+            color: #666;
             margin-top: 10px;
             font-style: italic;
         }
+
         footer {
             margin-top: 60px;
             padding: 40px 20px;
@@ -156,16 +165,22 @@
     </style>
 </head>
 <body>
+
     <div class="menu">
         <a href="advisory.html">Advisory</a>
         <a href="apps.html">Apps</a>
         <a href="gpts.html">GPTs</a>
     </div>
 
-    <img src="https://raw.githubusercontent.com/redwheelbarroww/rluxton.com/main/upscaled_headshot.remini-enhanced.jpg" alt="Rebecca Luxton, Media Futurist and VP of Marketing" class="headshot">
+    <img src="https://raw.githubusercontent.com/redwheelbarroww/rluxton.com/main/upscaled_headshot.remini-enhanced.jpg" alt="Rebecca Luxton headshot" class="headshot" />
 
     <h1>Rebecca Luxton</h1>
-    <p>Media futurist exploring how technology reshapes storytelling. As VP of Marketing at Indigenous Media, I've scaled 60 Second Docs to 13.6MM followers and 12B views by spotting patterns others miss.<br><br>I work at the intersection of emerging capabilities and audience behavior, turning early signals into growth strategies. Currently experimenting with AI-native workflows while building for what comes next.<br><br>Open to conversations about media evolution, strategic foresight, and the future of human-AI collaboration.</p>
+
+    <p>Media futurist exploring how technology reshapes storytelling. As VP of Marketing at Indigenous Media, I've scaled 60 Second Docs to 13.6MM followers and 12B views by spotting patterns others miss.</p>
+
+    <p>I work at the intersection of emerging capabilities and audience behavior, turning early signals into growth strategies. Currently experimenting with AI-native workflows while building for what comes next.</p>
+
+    <p>Open to conversations about media evolution, strategic foresight, and the future of human-AI collaboration.</p>
 
     <a href="mailto:rebecca.m.luxton@gmail.com" class="cta">Explore a Future Together</a>
 
@@ -191,12 +206,13 @@
     </div>
 
     <div class="banner">
-        <img src="https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true" alt="Rebecca Luxton Outdoor">
+        <img src="https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true" alt="Rebecca Luxton working outdoors" />
         <div class="caption">Need strategy rooted in real life? I design future-forward systems that actually work in the wild.</div>
     </div>
 
     <footer>
         © 2025 Rebecca Luxton. All rights reserved.
     </footer>
+
 </body>
 </html>
