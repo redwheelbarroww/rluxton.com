@@ -3,28 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rebecca Luxton | Media Futurist, AI Strategist & Marketing Leader</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Rebecca Luxton is a media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
-  <meta name="keywords" content="Rebecca Luxton, Media Futurist, AI Strategist, VP of Marketing, Creative AI, Strategic Foresight, Pattern Recognition, Future of Marketing, Somatic Intelligence, Technology Trends" />
-  <meta name="author" content="Rebecca Luxton" />
-
-  <!-- Open Graph for Social Sharing -->
+  <title>Rebecca Luxton | Media Futurist & VP of Marketing</title>
   <meta property="og:title" content="Rebecca Luxton | Media Futurist & VP of Marketing" />
   <meta property="og:description" content="Media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
   <meta property="og:image" content="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true" />
   <meta property="og:url" content="https://rluxton.com" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://rluxton.com" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
+  <meta name="description" content="Rebecca Luxton is a media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
+  <meta name="keywords" content="Media Futurist, AI Marketing, Strategic Foresight, Pattern Recognition, Future of Marketing, Technology Trends, Rebecca Luxton" />
+  <meta name="author" content="Rebecca Luxton" />
   <style>
-    /* [unchanged styles — original stylesheet retained here] */
+    body {
+      font-family: Garamond, Georgia, serif;
+      background: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .menu {
+      margin: 30px 0 10px;
+    }
+    .menu a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      color: #007BFF;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+    .menu a:hover {
+      color: #0056b3;
+    }
+    .headshot {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #007BFF;
+      object-fit: cover;
+      object-position: top;
+      box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    p {
+      max-width: 640px;
+      margin: 20px auto;
+      padding: 0 20px;
+      font-size: 1.05em;
+      color: #444;
+    }
+    .cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #007BFF, #0056b3);
+      color: white;
+      padding: 14px 30px;
+      font-size: 1.1em;
+      font-weight: 500;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: transform 0.3s ease;
+    }
+    .cta:hover {
+      transform: scale(1.05);
+    }
+    .social-links {
+      margin-top: 10px;
+    }
+    .social-links a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 500;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #0056b3;
+    }
+    section {
+      max-width: 700px;
+      margin: 60px auto 0;
+      padding: 0 20px;
+      text-align: left;
+    }
+    section h2 {
+      font-size: 1.6em;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    section ul {
+      padding-left: 20px;
+      color: #555;
+      font-size: 1em;
+    }
+    section ul li {
+      margin-bottom: 12px;
+    }
+    .banner {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .banner img {
+      max-width: 700px;
+      width: 90%;
+      border-radius: 12px;
+    }
+    .caption {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #999;
+      text-align: center;
+    }
+   .creative-studio {
+  margin-top: 100px;
+  max-width: 960px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.creative-studio h2 {
+  font-size: 2em;
+  color: #007BFF;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-card {
+  background: #ffffff;
+  color: #333;
+  padding: 28px 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  height: 100%;
+  border-top: 3px solid #007BFF;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.3;
+}
+
+.project-card p {
+  font-size: 1.05em;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.project-card a {
+  font-size: 1em;
+  font-weight: 500;
+  color: #007BFF;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #0056b3;
+  border-bottom: 1px solid #0056b3;
+}
+
   </style>
 </head>
 <body>
