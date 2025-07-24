@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Rebecca Luxton</title>
+  <meta name="description" content="Free tools, guides, and creative workflows from Rebecca Luxton." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Garamond, Georgia, serif;
+      background: #f8f8f8;
+      color: #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .resource-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 700px) {
+      .resource-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .resource-card {
+      background: #fff;
+      padding: 28px 30px;
+      border-radius: 14px;
+      text-align: left;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-top: 3px solid #007BFF;
+      transition: all 0.3s ease;
+    }
+    .resource-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+    .resource-card h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #111;
+    }
+    .resource-card p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 16px;
+    }
+    .resource-card a {
+      font-weight: 500;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .resource-card a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resources</h1>
+  <p class="subtitle">Free tools, guides, and creative frameworks to support your next move.</p>
+
+  <div class="resource-grid">
+    <div class="resource-card">
+      <h2>No-Experience Guide: Build Your Website on GitHub</h2>
+      <p>A dead-simple, step-by-step guide to help beginners launch their own portfolio site using GitHub and ChatGPT. Zero downloads, zero confusion.</p>
+      <a href="https://github.com/redwheelbarroww/rluxton.com/blob/39597a6799ebf4024751c2a8b2094d85846d2ec3/The%20%E2%80%9CNo%20Experience%20Needed%E2%80%9D%20Guide%20to%20Building%20Your%20Own%20Website%20on%20GitHub.pdf" target="_blank">Open PDF</a>
+    </div>
+
+    <!-- You can add more cards here as you build out your toolkit -->
+  </div>
+
+  <footer style="margin-top: 60px; font-size: 0.9em; color: #999;">
+    <a href="index.html" style="color:#007BFF; text-decoration:none;">← Back to Home</a><br><br>
+    © 2025 Rebecca Luxton. All rights reserved.
+  </footer>
+</body>
+</html>
