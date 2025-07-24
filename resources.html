@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources | Rebecca Luxton</title>
-  <meta name="description" content="Free tools, guides, and creative workflows from Rebecca Luxton." />
+  <meta name="description" content="Free tools, guides, and creative frameworks to support your next move." />
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -23,8 +23,17 @@
       color: #666;
       margin-bottom: 40px;
     }
+    .filter {
+      margin-bottom: 40px;
+    }
+    .filter select {
+      font-size: 1em;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
     .resource-grid {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       display: grid;
       gap: 32px;
@@ -43,10 +52,18 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       border-top: 3px solid #007BFF;
       transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .resource-card:hover {
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
+    }
+    .resource-thumbnail {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 18px;
     }
     .resource-card h2 {
       font-size: 1.4em;
@@ -62,9 +79,29 @@
       font-weight: 500;
       color: #007BFF;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1em;
     }
     .resource-card a:hover {
       color: #0056b3;
+    }
+    .download-icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url('https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Download/Flat/download.png') no-repeat center;
+      background-size: contain;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #999;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -72,18 +109,35 @@
   <h1>Resources</h1>
   <p class="subtitle">Free tools, guides, and creative frameworks to support your next move.</p>
 
-  <div class="resource-grid">
-    <div class="resource-card">
-      <h2>No-Experience Guide: Build Your Website on GitHub</h2>
-      <p>A dead-simple, step-by-step guide to help beginners launch their own portfolio site using GitHub and ChatGPT. Zero downloads, zero confusion.</p>
-      <a href="https://github.com/redwheelbarroww/rluxton.com/blob/39597a6799ebf4024751c2a8b2094d85846d2ec3/The%20%E2%80%9CNo%20Experience%20Needed%E2%80%9D%20Guide%20to%20Building%20Your%20Own%20Website%20on%20GitHub.pdf" target="_blank">Open PDF</a>
-    </div>
-
-    <!-- You can add more cards here as you build out your toolkit -->
+  <!-- Filter (non-functional for now) -->
+  <div class="filter">
+    <label for="category">Filter by type: </label>
+    <select id="category" name="category" disabled>
+      <option>All</option>
+      <option>Guides</option>
+      <option>Templates</option>
+      <option>Creative</option>
+    </select>
+    <small style="display:block; color:#888; margin-top:6px;">(Filtering coming soon)</small>
   </div>
 
-  <footer style="margin-top: 60px; font-size: 0.9em; color: #999;">
-    <a href="index.html" style="color:#007BFF; text-decoration:none;">← Back to Home</a><br><br>
+  <div class="resource-grid">
+
+    <div class="resource-card">
+      <img class="resource-thumbnail" src="https://raw.githubusercontent.com/redwheelbarroww/rluxton.com/main/github-guide-preview.png" alt="GitHub guide preview">
+      <h2>No-Experience Guide: Build Your Website on GitHub</h2>
+      <p>A dead-simple, step-by-step guide to help beginners launch their own portfolio site using GitHub and ChatGPT. Zero downloads, zero confusion.</p>
+      <a href="https://github.com/redwheelbarroww/rluxton.com/blob/39597a6799ebf4024751c2a8b2094d85846d2ec3/The%20%E2%80%9CNo%20Experience%20Needed%E2%80%9D%20Guide%20to%20Building%20Your%20Own%20Website%20on%20GitHub.pdf" target="_blank">
+        <span class="download-icon" aria-hidden="true"></span> Open PDF
+      </a>
+    </div>
+
+    <!-- Add more cards here as your resource collection grows -->
+
+  </div>
+
+  <footer>
+    <br><a href="index.html">← Back to Home</a><br><br>
     © 2025 Rebecca Luxton. All rights reserved.
   </footer>
 </body>
