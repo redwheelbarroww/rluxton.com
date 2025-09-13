@@ -4,123 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rebecca Luxton | Media Futurist & VP of Marketing</title>
-  <meta name="description" content="Rebecca Luxton — media futurist, AI-native marketer, and systems thinker. Exploring how technology reshapes storytelling and scaling future-forward brand strategy." />
-  <meta name="keywords" content="Rebecca Luxton, AI Marketing, Media Futurist, GPTs, Digital Strategy, Brand Growth, Emerging Tech" />
+  <meta name="description" content="Rebecca Luxton is a media futurist and marketing leader exploring how emerging technology shapes storytelling, growth, and the future of creative work." />
+  <meta name="keywords" content="Rebecca Luxton, Media Futurist, AI Marketing, Strategic Foresight, Creative Strategy, GPTs, Future of Storytelling, VP of Marketing, AI Tools, Emerging Tech" />
   <meta name="author" content="Rebecca Luxton" />
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Rebecca Luxton",
-      "jobTitle": "VP of Marketing",
       "url": "https://rluxton.com",
-      "image": "https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true",
+      "jobTitle": "VP of Marketing",
       "sameAs": [
-        "https://www.linkedin.com/in/rebecca-luxton"
+        "https://linkedin.com/in/rebecca-luxton"
       ]
     }
   </script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <style>
     body {
+      background: #0d0d0d;
+      color: #f8f8f2;
+      font-family: 'Fira Mono', monospace;
       margin: 0;
       padding: 40px 20px;
-      background-color: #0d0d0d;
-      color: #cccccc;
-      font-family: "Courier New", Courier, monospace;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      position: relative;
+      line-height: 1.6;
     }
-
-    /* Background photo as overlay behind content */
-    .bg-photo {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background-image: url('https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true');
-      background-size: cover;
-      background-position: center;
-      filter: grayscale(100%) brightness(0.2);
-      z-index: 0;
-      pointer-events: none;
-    }
-
     .terminal {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      width: 100%;
-      background-color: rgba(20, 20, 20, 0.9);
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 255, 144, 0.15);
+      max-width: 700px;
+      margin: 0 auto;
+      white-space: pre-wrap;
+      font-size: 1.05em;
     }
-
     .prompt {
-      color: #00ff90;
-      font-weight: bold;
+      color: #8be9fd;
     }
-
-    .heading {
-      color: #00ccff;
-      font-weight: bold;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 1.2em;
+    .command {
+      color: #50fa7b;
     }
-
-    .body-text {
-      color: #cccccc;
-      margin-bottom: 1em;
-    }
-
-    .projects {
-      margin-top: 40px;
-    }
-
-    .project-link {
-      display: block;
-      color: #00ff90;
+    a {
+      color: #bd93f9;
       text-decoration: none;
-      font-weight: bold;
-      margin-bottom: 12px;
     }
-    .project-link:hover {
-      color: #66ffb3;
+    a:hover {
+      text-decoration: underline;
     }
-
-    footer {
-      margin-top: 60px;
+    .polaroid {
+      margin: 60px auto 30px;
+      max-width: 280px;
+      background: white;
+      border-radius: 8px;
+      padding: 10px 10px 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
       text-align: center;
-      color: #666666;
-      font-size: 0.9em;
+    }
+    .polaroid img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .polaroid-caption {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 1em;
+      color: #333;
+      margin-top: 12px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 0.85em;
+      color: #666;
     }
   </style>
-
 </head>
 <body>
-  <div class="bg-photo"></div>
-
   <div class="terminal">
-    <p><span class="prompt">&gt;</span> whoami</p>
-    <p class="body-text">Rebecca Luxton — marketing exec, pattern spotter, AI toolmaker</p>
+    <span class="prompt">> whoami</span>
+    <div class="command">Rebecca Luxton — VP of Marketing & Media Futurist</div>
 
-    <p><span class="prompt">&gt;</span> what-i-do</p>
-    <p class="body-text">I scale brands through strategic foresight, AI-native systems, and content that thrives in change.</p>
+    <span class="prompt">> bio</span>
+    <div class="command">I explore how emerging tech reshapes storytelling, growth, and creative work. Currently scaling brands with AI-native workflows and pattern-driven strategy.</div>
 
-    <p><span class="prompt">&gt;</span> projects</p>
-    <div class="projects">
-      <a class="project-link" href="https://themirrorstack.com" target="_blank">The Mirror Stack — persona-centered GPT workflows</a>
-      <a class="project-link" href="https://yourcustomgpt.io" target="_blank">YourCustomGPT.io — custom GPTs for teams & creators</a>
+    <span class="prompt">> now</span>
+    <div class="command">
+- Building yourcustomgpt.io — custom GPTs for creators and teams
+- Designing Mirror Stack — persona-based GPT workflows at themirrorstack.com
+- Advising brands on digital strategy and future foresight
     </div>
 
-    <p class="heading"><span class="prompt">&gt;</span> connect</p>
-    <p class="body-text"><a href="mailto:rebecca.m.luxton@gmail.com">rebecca.m.luxton@gmail.com</a></p>
-    <p class="body-text"><a href="https://linkedin.com/in/rebecca-luxton" target="_blank">linkedin.com/in/rebecca-luxton</a></p>
+    <span class="prompt">> connect</span>
+    <div class="command">
+      <a href="mailto:rebecca.m.luxton@gmail.com">Email</a> / <a href="https://linkedin.com/in/rebecca-luxton" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="polaroid">
+    <img src="https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true" alt="Rebecca Luxton Outdoor">
+    <div class="polaroid-caption">Designing futures that feel human</div>
   </div>
 
   <footer>
