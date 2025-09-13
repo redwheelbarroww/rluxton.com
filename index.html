@@ -4,124 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rebecca Luxton | Media Futurist & VP of Marketing</title>
-  <meta name="description" content="Rebecca Luxton is a marketing leader building AI-native workflows, scaling brands through digital strategy, and exploring the intersection of tech, storytelling, and systems design." />
-  <meta name="keywords" content="Rebecca Luxton, Media Futurist, AI Marketing, GPTs, Digital Strategy, VP Marketing, Emerging Tech, AI Workflows" />
-  <meta name="author" content="Rebecca Luxton" />
   <meta property="og:title" content="Rebecca Luxton | Media Futurist & VP of Marketing" />
-  <meta property="og:description" content="Marketing leader exploring how AI reshapes brand growth. Building GPTs, designing creative systems, and scaling what matters." />
-  <meta property="og:image" content="https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true" />
+  <meta property="og:description" content="Media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
+  <meta property="og:image" content="https://github.com/redwheelbarroww/rluxton.com/blob/main/upscaled_headshot.remini-enhanced.jpg?raw=true" />
   <meta property="og:url" content="https://rluxton.com" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Rebecca Luxton is a media futurist exploring how technology reshapes storytelling. VP of Marketing scaling brands through pattern recognition and strategic foresight." />
+  <meta name="keywords" content="Media Futurist, AI Marketing, Strategic Foresight, Pattern Recognition, Future of Marketing, Technology Trends, Rebecca Luxton" />
+  <meta name="author" content="Rebecca Luxton" />
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rebecca Luxton",
-      "jobTitle": "VP of Marketing",
-      "url": "https://rluxton.com",
-      "image": "https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true",
-      "sameAs": [
-        "https://linkedin.com/in/rebecca-luxton"
-      ]
-    }
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Rebecca Luxton",
+    "jobTitle": "VP of Marketing",
+    "url": "https://rluxton.com",
+    "sameAs": [
+      "https://linkedin.com/in/rebecca-luxton"
+    ]
+  }
   </script>
   <style>
     body {
-      background-color: #0d0d0d;
+      font-family: "Courier New", monospace;
+      background-color: #0a0a0a;
       color: #00ff90;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1rem;
+      margin: 0;
       padding: 40px 20px;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
     }
     .terminal {
       max-width: 780px;
-      width: 100%;
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 8px;
-      padding: 32px;
-      box-shadow: 0 0 16px rgba(0, 255, 144, 0.1);
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 1.1em;
       position: relative;
-      overflow: hidden;
     }
-    .ascii-overlay {
+    .terminal::before {
+      content: "";
+      background-image: url('https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.05;
       position: absolute;
-      top: 24px;
-      right: 24px;
-      width: 180px;
-      opacity: 0.12;
+      top: 0; left: 0; right: 0; bottom: 0;
       z-index: 0;
-      filter: grayscale(1) contrast(1.2);
-      mix-blend-mode: screen;
     }
-    .terminal p {
-      margin: 0 0 1em;
-      z-index: 1;
+    .line {
       position: relative;
+      z-index: 1;
     }
-    .prompt {
+    .prompt::before {
+      content: "> ";
       color: #00ff90;
     }
     a {
-      color: #00ccff;
-      text-decoration: none;
-    }
-    a:hover {
+      color: #00ff90;
       text-decoration: underline;
     }
-    .project {
+    .projects {
       margin-top: 40px;
     }
-    .project h2 {
+    .project-title {
       color: #00ff90;
-      font-size: 1.2em;
-      margin-bottom: 12px;
-    }
-    .project p {
-      color: #ccc;
-      font-size: 0.95em;
+      font-weight: bold;
+      margin-top: 20px;
     }
     footer {
       margin-top: 60px;
-      font-size: 0.8em;
-      color: #666;
+      font-size: 0.9em;
+      color: #00ff90;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="terminal">
-    <img class="ascii-overlay" src="https://github.com/redwheelbarroww/rluxton.com/blob/a88ded8b26152fe929270e1ca31996ce1dfbe446/IMG_7408.jpeg?raw=true" alt="Rebecca Luxton Outdoor Photo" />
-    <p><span class="prompt">$</span> whoami</p>
-    <p>Rebecca Luxton — marketing exec, pattern spotter, AI toolmaker</p>
+    <div class="line prompt">whoami</div>
+    <div class="line">Rebecca Luxton — marketing exec, pattern spotter, AI toolmaker</div>
 
-    <p><span class="prompt">$</span> what-i-do</p>
-    <p>I build AI-native workflows, lead brand strategy, and help teams scale with intention.</p>
+    <div class="line prompt">what-do-i-do</div>
+    <div class="line">I design marketing systems that scale with soul — integrating emerging technology with deep audience insight.</div>
 
-    <p><span class="prompt">$</span> projects</p>
+    <div class="line prompt">current-focus</div>
+    <div class="line">Experimenting with AI-native workflows, creative strategy tools, and calm tech for clarity-centered teams.</div>
 
-    <div class="project">
-      <h2><a href="https://themirrorstack.com" target="_blank">The Mirror Stack</a></h2>
-      <p>Persona-centered GPT ecosystem for insight, reflection, and adaptive strategy.</p>
+    <div class="line prompt">projects</div>
+    <div class="projects">
+      <div class="project-title">The Mirror Stack</div>
+      <div class="line"><a href="https://themirrorstack.com" target="_blank">Persona-centered GPT stack for creative navigation and decision-making</a></div>
+
+      <div class="project-title">YourCustomGPT.io</div>
+      <div class="line"><a href="https://yourcustomgpt.io" target="_blank">Custom GPT builds for founders, agencies, and operators building AI-augmented systems</a></div>
     </div>
 
-    <div class="project">
-      <h2><a href="https://yourcustomgpt.io" target="_blank">YourCustomGPT.io</a></h2>
-      <p>Custom AI interfaces designed for founders, teams, and tools that scale you.</p>
-    </div>
-
-    <p><span class="prompt">$</span> contact</p>
-    <p><a href="mailto:rebecca.m.luxton@gmail.com">rebecca.m.luxton@gmail.com</a> — let's talk</p>
+    <div class="line prompt">connect</div>
+    <div class="line"><a href="mailto:rebecca.m.luxton@gmail.com">rebecca.m.luxton@gmail.com</a></div>
+    <div class="line"><a href="https://linkedin.com/in/rebecca-luxton" target="_blank">linkedin.com/in/rebecca-luxton</a></div>
   </div>
-
   <footer>
-    &copy; 2025 Rebecca Luxton
+    &copy; 2025 Rebecca Luxton. All rights reserved.
   </footer>
 </body>
 </html>
