@@ -1,6 +1,6 @@
 # rluxton.com
 
-Personal portfolio and writing hub for Rebecca Luxton — systems thinker, product designer, and emotionally intelligent AI builder.
+Personal portfolio and writing hub for Rebecca Luxton — systems thinker, product designer, and ML/AI-informed builder.
 
 - Project archive across tech, writing, and experimental publishing
 - Books, toolkits, and micro-press publications
